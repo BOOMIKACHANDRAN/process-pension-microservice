@@ -3,8 +3,8 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/msd-auth-service:1"
+        TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/boomika-process-pension-microservice:1"
         LoadBalancerInfo:
-          ContainerName: "msd-auth-service"
+          ContainerName: "boomika-process-pension-microservice"
           ContainerPort: "8000"
         PlatformVersion: "LATEST"
