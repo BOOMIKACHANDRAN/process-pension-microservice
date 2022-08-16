@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 import com.pension.management.processpensionmicroservice.model.PensionerDetail;
 
-@FeignClient(name="pensioner-detail",url="${pensioner-detail.uri}")
+//@FeignClient(name="pensioner-detail",url="${pensioner-detail.uri}")
+@FeignClient(name="pensioner-detail",url="http://localhost:8080")
 public interface ProcessPensionProxy {
 
 	@GetMapping("/PensionerDetailByAadhaar/{aadhaarNumber}")

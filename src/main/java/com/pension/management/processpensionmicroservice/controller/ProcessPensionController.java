@@ -3,6 +3,7 @@ package com.pension.management.processpensionmicroservice.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -13,6 +14,7 @@ import com.pension.management.processpensionmicroservice.model.PensionerDetail;
 import com.pension.management.processpensionmicroservice.model.ProcessPension;
 import com.pension.management.processpensionmicroservice.service.ProcessPensionService;
 
+@CrossOrigin(origins="http://localhost:4200")
 @RestController
 public class ProcessPensionController {
 
